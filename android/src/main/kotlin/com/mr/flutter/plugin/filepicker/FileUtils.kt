@@ -513,7 +513,7 @@ object FileUtils {
         val fileInfo = FileInfo.Builder()
         val fileName = getFileName(uri, context)
         val path =
-            context.cacheDir.absolutePath + "/file_picker/" + System.currentTimeMillis() + "/" + (fileName
+            context.cacheDir.absolutePath + "/file_picker/" + System.currentTimeMillis() + "/" + (fileName?.let { File(it).name }
                 ?: "unamed")
 
         val file = File(path)

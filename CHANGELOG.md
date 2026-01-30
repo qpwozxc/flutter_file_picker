@@ -1,3 +1,7 @@
+## 10.3.11
+#### Android
+- Fixed a directory traversal vulnerability where malicious filenames could create directories outside the intended path.
+
 ## 10.3.10
 #### General
 - Reverted breaking changes accidentally introduced in 10.3.9 to maintain Semantic Versioning compliance.
